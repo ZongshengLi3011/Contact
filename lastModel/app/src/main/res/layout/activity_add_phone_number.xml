@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/q"
+    tools:context=".AddPhoneNumber">
+
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_background"
+            android:text="@string/back"
+            android:textColor="#2BFFDB"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_background"
+            android:text="保存"
+            android:textColor="#2BFFDB"
+            android:textSize="17dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/button_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="37dp"
+        android:text="姓               名："
+        android:textColor="#4BDBEE"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/button_phone_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:text="手 机 号 码 1 ："
+        android:textColor="#4BDBEE"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/button_phone_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_phone_number1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:text="手 机 号 码 2 ："
+        android:textColor="#4BDBEE"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/button_house_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_phone_number2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:text="家 庭 座 机 号："
+        android:textColor="#4BDBEE"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/button_office_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_house_number"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:text="办公座机号码："
+        android:textColor="#4BDBEE"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/button_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_office_number"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:text="地                 址："
+        android:textColor="#4BDBEE"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/button_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_address"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:text="备                 注："
+        android:textColor="#4BDBEE"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@id/button_name"
+        android:hint="请输入姓名"
+        android:inputType="text"
+        android:maxLength="10"
+        android:textColor="#F40"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_phone_number1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_name"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/button_phone_number1"
+        android:hint="请输入电话号码"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="#F40"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_phone_number2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_phone_number1"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/button_phone_number2"
+        android:hint="请输入电话号码"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="#F40"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_house_number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_phone_number2"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/button_house_number"
+        android:hint="请输入家庭座机"
+        android:inputType="number"
+        android:maxLength="12"
+        android:textColor="#F40"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_office_number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_house_number"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/button_office_number"
+        android:hint="请输入办公座机"
+        android:inputType="number"
+        android:maxLength="12"
+        android:textColor="#F40"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_office_number"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/button_address"
+        android:hint="请输入地址"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="#F40"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_remark"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_address"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/button_remark"
+        android:hint="请输入备注信息"
+        android:inputType="text"
+        android:maxLength="30"
+        android:textColor="#F40"
+        android:textSize="15dp" />
+
+</RelativeLayout>

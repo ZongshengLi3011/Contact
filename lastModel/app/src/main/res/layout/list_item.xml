@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    tools:context=".ListItem">
+
+    <ImageView
+        android:id="@+id/phone_image"
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:id="@+id/line_text"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="15dp"
+            android:text=""
+            android:textColor="#2359F5"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/list_phone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text=""
+            android:textColor="#9AACBB" />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/button_call"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/ddh"
+            android:focusable="false"/>
+
+    <Button
+            android:id="@+id/button_massages"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/dx"
+            android:focusable="false"/>
+
+    <Button
+            android:id="@+id/button_change"
+            android:layout_width="38dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/xg"
+            android:focusable="false"/>
+
+    <Button
+            android:id="@+id/button_chaxun"
+            android:layout_width="34dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/ss"
+            android:focusable="false"/>
+</LinearLayout>
