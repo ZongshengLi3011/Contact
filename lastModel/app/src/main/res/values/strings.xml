@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">手机通讯录</string>
+    <string name="back">&lt; 返回</string>
+    <string name="cheese_hunt_hint">查询手机联系人</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>
